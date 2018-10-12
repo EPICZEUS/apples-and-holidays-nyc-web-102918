@@ -69,8 +69,9 @@ def all_supplies_in_holidays(holiday_hash)
     out += key.to_s.capitalize + "\n\t"
     
     val.each do |key, val|
-      out += key.to_s.split(" ").map {|s| s.capitalize }.join(" ")
-        + ": #{val.join(" "}"
+      out += key.to_s.split(" ").map {|s| s.capitalize }.join(" ") + ": #{val.join(", "}"
+    end
+  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
